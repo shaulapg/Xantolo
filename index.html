@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xantolo</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 style="text-align: center">Xantolo</h1>
+      <h3 style="text-align: center">
+        Donde se ríe, se llora y se baila con los muertos
+      </h3>
+      <br />
+      Una festividad que sobrevivió a la consquista española, representativa de
+      las huastecas. Xantolo tiene muchas variantes, pero específicamente
+      hablaremos de Xantolo en tempoal, Veracrúz.<br />
+      Esta es la festividad más importante de Tempoal. en el centro se puede
+      observar un tapiz de imágenes alusivas a esta festividad, que trata de un
+      baile con música tradicional.<br /><br />
+      Xantolo es una festividad que pretende recordar a los muertos, no con luto
+      o tristeza, sino con baile y alegría, es una festividad para celebrar la
+      vida, aunque esta ya haya concluído. Los bailes se realizan en na tarima,
+      en comparsas que desfilan para todos, pero lo peculiar de esto es que
+      todos los participantes cuentan con máscaras hechas a con madera,
+      disfrazados de lo que puedan pensar. Desde catrinas hasta personajes de
+      series populares bailan codo a codo de manera corogreafeada para dar un
+      espectáculo mientras los sones alegran la atmósfera. <br /><br />
+      Los habitantes de Tempoal son músicos, escultores y bailarines. Cada arte
+      conlleva su preparación, pues los músicos preparan los sones con
+      antelación, mientras lo mientras los escultores trabajan todo el año en
+      las máscaras artesanales y los bailarines practican las coreografías, que
+      si bien son fáciles de seguir y la mayoría ya las conoce desde la
+      infancia, cada año son reunidos para seguir practicando con meses de
+      anticipación. <br /><br />
+      Xantolo mueve a todos los habitantes de Tempoal pra recordar a aquellos
+      que alguna vez nos acompañaron.<br /><br />
+
+      <h3>Las Máscaras</h3>
+      En Xantolo, la máscara es más que un disfraz: representa cultura, el arduo
+      trabajo y conocimiento de los artesanos. Esta máscara es un lazo con los
+      muertos, e incluso la leyenda cuenta que aquel que se quite la máscara
+      durante el baile de la comparsa, condenará a su espíritu a traerla puesta
+      una vez pase a mejor vida, sin posibilidad de retirarla. Las máscaras se
+      piden hasta con un año de antelación a cambio de un precio razonable para
+      un trabajo de este tipo.<br /><br />
+
+      <img id="masc" src="Máscara 1.jpeg" style="width: 33%" /><br />
+      <button
+        type="boton1"
+        onclick="cambiarimagen()"
+        style="width: 33%; border: none; padding: 0px 0px"
+      >
+        <img id="boton1" src="Botón 1.png" style="width: 100%" />
+      </button>
+      <script>
+        let imagenOriginal = document.getElementById("masc").src;
+        let botonOriginal = document.getElementById("boton1").src;
+        function cambiarimagen() {
+          if (document.getElementById("masc").src === imagenOriginal) {
+            document.getElementById("masc").src = "Mascara 2.jpeg";
+            document.getElementById("boton1").src = "Botón 2.png";
+          } else {
+            document.getElementById("masc").src = imagenOriginal;
+            document.getElementById("boton1").src = botonOriginal;
+          }
+        }
+      </script>
+
+      <h3>Las comparsas</h3>
+      Grupos de personas que bailan en el festejo, en tarimas largas para que
+      todos puedan disfrutar el show. Suelen dividirse por calles y/o familias.
+      Las comparsas practican las danzas desde meses anteriores, aún así hay
+      oportunidad de unirse poco antes, pues es muy fácil seguir el ritmo.
+      Participan personas de todas las edades. <br /><br />
+      <h3>Donde se ríe, se llora y se baila con los muertos</h3>
+      Las personas deciden hornar a sus seres queridos que pasaron a mejor vida,
+      pero no de la típica manera triste, sino con una fiesta para recordar la
+      alegría vivida. Claramente el extrañar a los seres queridos es un momento
+      triste, pero en Xantolo los muertos regresan a disfrutar los gozos de la
+      vida, y, como lo dice el eslogán, "se ríe, se llora y se baila con los
+      muertos" a veces incluso los tres a la vez.<br /><br />
+      <img id="comp" src="Comparsa 1.jpg" style="width: 33%" /><br />
+      <button
+        type="boton2"
+        onclick="cambiarimagen2()"
+        style="width: 33%; border: none; padding: 0px 0px"
+      >
+        <img id="boton2" src="Botón 3.png" style="width: 100%" />
+      </button>
+      <script>
+        let imagenOriginal2 = document.getElementById("comp").src;
+        let botonOriginal2 = document.getElementById("boton2").src;
+        function cambiarimagen2() {
+          if (document.getElementById("comp").src === imagenOriginal2) {
+            document.getElementById("comp").src = "Comparsa 2.jpg";
+            document.getElementById("boton2").src = "Botón 4.png";
+          } else {
+            document.getElementById("comp").src = imagenOriginal2;
+            document.getElementById("boton2").src = botonOriginal2;
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
